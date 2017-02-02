@@ -1,0 +1,35 @@
+<!Doctype html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" href="<?= $this->baseUrl(); ?>/img/img.jpg">
+        <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->baseUrl(); ?>/img/img.jpg" />
+        
+        <meta name="description" content="<?=$this->layout()->metaDescription;?>">
+        <meta name="keywords" content="<?=$this->layout()->metaTags;?>">
+        <title><?= $this->layout()->pageTitle; ?> :: Esdrey López</title>
+        
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/bootstrap/bootstrap-4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/estilo.css" />
+        
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/jquery.v1.12.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/bootstrap/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+        <script>
+            var path = "<?php echo $this->baseUrl(); ?>";//por si queremos la url base en js
+        </script>
+        <?php
+            echo $this->headMeta();
+            echo $this->headTitle(); 
+            echo $this->headLink();
+            echo $this->headScript();
+        ?>
+    </head>
+    <body>
+        <header></header>
+        <section>
+            <?= $this->layout()->content; ?>
+        </section>
+    </body>
+</html>
